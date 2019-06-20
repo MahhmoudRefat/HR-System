@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/Header_Nav_Style_Hr_Admin.css">
+    <title >Delete Employee </title>
+</head>
+ <style>
+     #salary_text{    
+         box-sizing:auto;
+         border: 4px solid rgba(0, 0, 0, 0.4) ;
+         opacity: 0.6;
+         padding: 10px;
+     }
+    </style>
+
+<body>
+    
+     <script>
+    function Delete_Warning() {    
+            var x;   
+                if (confirm(" Warning.......! Are You Sure You Want To Delete This Employee") == true) { 
+                    x = "Yes Delete "; 
+                } 
+                else 
+                {   
+                    x = "No!"; 
+                }   
+                document.getElementById("demo").innerHTML = x;
+            }
+    
+    </script>
+    
+<!-- *********************** Start Of The Navigation & Header ******************************** -->
+
+    <ul id="ul-nav-Header">
+      <li><img id="avatar" src="../../img/img_avatar.jpg" alt="Avatar"></li>
+      <li ><a   href="#">Mahmoud Refaat</a></li>
+      <li id="header_logout"; ><a style="float:right; " style="float:right; " href="#">Log Out</a></li>
+       <li id="header_info"; ><a  style="float:right;" href="../../stakeholder/information/myinfo_hradmin.html" >My Info</a></li>
+    </ul>
+    <ul id="ul-nav" >
+        <li> <img id="logo" src="../../img/logo.png" alt="logo"> </li>
+        <li> <a href="../../stakeholder/hr_admin/Hr_Admain_Home.html">View Reports </a> </li>
+        <li> <a href="../../stakeholder/hr_admin/search-employee.html">Search Employee </a> </li>
+        <li> <a href="../../stakeholder/hr_admin/update-empoyee.html">Update Employee </a> </li>
+        <li> <a href="../../stakeholder/hr_admin/calculate-salary.html">Calculate Salary</a> </li>
+        <li> <a href="../../stakeholder/hr_admin/add-employee.html">Add Employee</a> </li>
+        <li> <a href="../../stakeholder/hr_admin/delete%20.html">Delete Employee</a> </li>
+    </ul>
+    
+<!-- ***********************End Of The Navigation and Header***************************** -->
+    
+<div class="content" >
+    <label id="search_label">
+        <a> Write The Employee Code </a>
+        <input style ="height:25px;" type="text">
+        <input class="btn_public_hradmin" id="btn_search" type="button" value="Search" name="search" style="height:30px;">
+    </label>
+    
+<form class="public_hr_admin_form" id="employee_info_form" action ="action_page.php" style="max-width:500px">
+    
+    <fieldset> 
+       <h3> <legend>Delete Employee</legend></h3>
+                        <b>code:</b> <input class="edit_text" type="text" name="code" value=""disabled>
+                        <br>
+						<b>First name:</b><input class="edit_text" type="text" name="first_name" value="" disabled>
+                        <br>
+                        <b>Last name:</b><input  class="edit_text" type="text" name="last_name" value="" disabled>
+                        <br>				  
+                        <b>Faculty:</b><input class="edit_text" type="text" name="faculty" value="" disabled>
+                        <br>
+                        <b>Department:</b><input class="edit_text" type="text" name="department" value="" disabled>
+						<br> 
+                        <b>Nationality:</b><input class="edit_text" type="text" name="nationality" value="" disabled>
+                        <br>				  
+                        <b>Gender:</b><input class="edit_text" type="text" name="gander" value="" disabled>
+                        <br>
+						<acronym style=" text-decoration: none;" title="Radio-Frequency"><b>RF</b></acronym> 
+                        <b>Card NO:</b><input class="edit_text" type="text" name="rf_card_no" value="" disabled>
+                        <br>				
+                        <b>Title:</b><input class="edit_text" type="text" name="title" value="" disabled>
+         <input class="btn_public_hradmin" id="button_delete_employee" type ="button" onclick="Delete_Warning()" value="Delete Emplyee" 
+                style="margin-left: 169px;background-color:#F00; border-color:F00;border: 1px solid #F00 ">
+   
+   </fieldset>
+   
+</div>
+    
+   
+</body>
+</html>
+
+
